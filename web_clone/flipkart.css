@@ -1,0 +1,134 @@
+.main-container{
+    width: 100%;
+}
+.header{
+    display: flex;
+    vertical-align: top;
+}
+body{
+    padding: 20px 70px;
+}
+.logo-box{
+    display: inline-block;
+    padding-right: 230px;
+}
+.logo{
+    background-color: rgb(255, 229, 31);;
+    width: 130px;
+    height: 44px;
+    margin-right: 8px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    border-style: none;
+    cursor: pointer;
+}
+.address-box{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 40px;
+}
+img{
+    cursor: pointer;
+}
+.search-box{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+}
+.search-bar{
+    height: 44px;
+
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsl(207, 100%, 59%);
+    border-radius: 10px;
+    width: 65%;
+}
+.search{
+    height: 34px;
+    width: 650px;
+    border-style: none;
+    font-size: 18px;
+}
+.about{
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 15px;
+    margin-left: 32px;
+    width: 350px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+i{
+    cursor: pointer;
+}
+.category{
+    display: flex;
+    height: 70px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.category img{
+    height: 36px;
+    width: 36px;
+}
+.category .icon{
+    display: inline-block;
+    text-align: center;
+}
+.icon p{
+    margin: 0px;
+}
+.icon{
+    margin: 0px 17px;
+}
+.ad{
+    height: 270px;
+    display: flex;
+    align-items: center;
+}
+.ad img{
+    border-radius: 15px;
+    width: 450px;
+    margin-right: 40px;
+}
+.recommend{
+    height: 290px;
+    border-style: solid;
+    border: 60px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom ,hsl(120, 67%, 64%),rgb(219, 255, 219));
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: hsl(0, 0%, 20%);
+}
+.recommend-img-box{
+    display: inline-block;
+    height: 230px;
+    width: 230px;
+    margin: 10px 7px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 4px;
+}
+.img-box{
+    height: 80%;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 94%);
+}
+.img-box img{
+    height: 200px;
+    width: 230px;
+    object-fit: contain;
+    object-position: center;
+}
+.recommend-img-box p{
+    margin: 0px;
+}
