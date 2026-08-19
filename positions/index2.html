@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Position Practice</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+
+        /* =========================
+           1. STATIC
+           ========================= */
+
+        .static-box {
+            position: static;
+
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+
+            background: lightblue;
+        }
+
+
+        /* =========================
+           2. RELATIVE
+           ========================= */
+
+        .relative-box {
+            position: relative;
+
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+
+            background: lightgreen;
+
+            top: 20px;
+            left: 30px;
+        }
+
+
+        /* =========================
+           3. ABSOLUTE
+           ========================= */
+
+        .absolute-parent {
+            position: relative;
+
+            width: 500px;
+            height: 200px;
+
+            margin: 40px 20px;
+
+            background: white;
+            border: 3px solid black;
+        }
+
+        .absolute-child {
+            position: absolute;
+
+            top: 20px;
+            right: 20px;
+
+            padding: 20px;
+
+            background: orange;
+        }
+
+
+        /* =========================
+           4. FIXED
+           ========================= */
+
+        .fixed-box {
+            position: fixed;
+
+            bottom: 20px;
+            right: 20px;
+
+            padding: 20px;
+
+            background: crimson;
+            color: white;
+
+            border-radius: 10px;
+        }
+
+
+        /* =========================
+           5. STICKY
+           ========================= */
+
+        .sticky-box {
+            position: sticky;
+
+            top: 0;
+
+            padding: 20px;
+
+            background: purple;
+            color: white;
+
+            text-align: center;
+        }
+
+
+        .content {
+            height: 1200px;
+            padding: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- STATIC -->
+
+    <div class="static-box">
+        STATIC
+        <br><br>
+        I stay in normal flow.
+    </div>
+
+
+    <!-- RELATIVE -->
+
+    <div class="relative-box">
+        RELATIVE
+        <br><br>
+        I move from my normal position.
+    </div>
+
+
+    <!-- ABSOLUTE -->
+
+    <div class="absolute-parent">
+
+        Parent
+        <br>
+        position: relative
+
+        <div class="absolute-child">
+            ABSOLUTE
+            <br>
+            top: 20px
+            <br>
+            right: 20px
+        </div>
+
+    </div>
+
+
+    <!-- STICKY -->
+
+    <div class="sticky-box">
+        STICKY — Scroll the page ↓
+    </div>
+
+
+    <!-- NORMAL CONTENT -->
+
+    <div class="content">
+
+        <h1>Scroll Down</h1>
+
+        <p>
+            The sticky element will stick to the top
+            when you scroll.
+        </p>
+
+        <br><br><br>
+
+        <h2>Normal Content</h2>
+
+        <p>
+            Keep scrolling...
+        </p>
+
+        <br><br><br>
+
+        <h2>More Content</h2>
+
+        <p>
+            Keep scrolling...
+        </p>
+
+        <br><br><br>
+
+        <h2>More Content</h2>
+
+        <p>
+            Keep scrolling...
+        </p>
+
+    </div>
+
+
+    <!-- FIXED -->
+
+    <div class="fixed-box">
+        FIXED
+        <br>
+        I stay on screen.
+    </div>
+
+
+</body>
+</html>
