@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element Mustache</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: #f8efe3;
+            font-family: Georgia, serif;
+        }
+
+        .mustache {
+            position: relative;
+            width: 40px;
+            height: 16px;
+            background: #2a1f1a;
+            border-radius: 12px;
+        }
+
+        .mustache::before,
+        .mustache::after {
+            content: "";
+            position: absolute;
+            top: -12px;
+            width: 58px;
+            height: 38px;
+            border-bottom: 16px solid #2a1f1a;
+            border-radius: 0 0 70px 70px;
+        }
+
+        .mustache::before {
+            right: 50%;
+            margin-right: -2px;
+            transform: rotate(16deg);
+            transform-origin: right bottom;
+        }
+
+        .mustache::after {
+            left: 50%;
+            margin-left: -2px;
+            transform: rotate(-16deg);
+            transform-origin: left bottom;
+        }
+
+        .face {
+            position: relative;
+            width: 220px;
+            height: 140px;
+            display: grid;
+            place-items: end center;
+        }
+
+        .eyes {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            width: 120px;
+            height: 40px;
+            transform: translateX(-50%);
+        }
+
+        .eyes::before,
+        .eyes::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 28px;
+            height: 28px;
+            background: #231815;
+            border-radius: 50%;
+            box-shadow: inset 6px 0 0 #fff8;
+        }
+
+        .eyes::before {
+            left: 16px;
+        }
+
+        .eyes::after {
+            right: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="face" aria-label="face with eyes and mustache">
+        <div class="eyes" aria-hidden="true"></div>
+        <div class="mustache" aria-hidden="true"></div>
+    </div>
+</body>
+</html>

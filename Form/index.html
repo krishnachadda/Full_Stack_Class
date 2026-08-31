@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hola Amigo!</title>
     <style>
         input{
             border-width:0px 0px 4px 0px;
+            box-shadow: 2px 2px 4px black;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        input:placeholder-shown{
+            outline: 3px solid blue;
         }
         input:required{
             border-color: red;
@@ -17,17 +21,48 @@
             border-color: green;
         }
         input:disabled{
-            border: 0px;
-            background-color: lightgray;
+            border-width: 0px;
+            background-color: lightgrey;
         }
         input:invalid{
             background-color: red;
         }
         input:in-range{
-            background-color: grey;
+            background-color: white;
         }
         input:out-of-range{
             background-color: red;
+        }
+        input:read-only{
+            border-width: 0px;
+            box-shadow: 0 0 0 transparent;
+            background-color: lightgrey;
+        }
+        input:focus{
+            box-shadow: 4px 4px 6px black;
+        }
+        li:not(:nth-child(2n)){
+            color: red;
+        }
+
+        li:not(:hover){
+            color: gray;
+        }
+        li:hover{
+            color: aqua;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+        }
+        div:has(h2 , h3){
+            color: green;
+        }
+        div:has(input:checked){
+            background-color: aqua;
+        }
+        div :is(h2, h3){
+            box-shadow: 2px 2px 4px black;
         }
     </style>
 </head>
@@ -37,6 +72,38 @@
         <input type="text" placeholder="Last Name" required/>
         <input type="text" value="Mathura" disabled/>
         <input type="email" placeholder="Email@.com" />
-        <input type="number" min="10" max="100" placeholder="age">
+        <input type="number" min="10" max="100">
+        <input type="text" value="Mr." readonly>
+
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+            <input type="checkbox" checked>
+        </div>
+        <div style="background-color: lightskyblue;">
+            <h2>Heading</h2>
+        </div>
+        <div>
+            <h2>Heading2</h2>
+            <h3>Heading3</h3>
+        </div>
+        <div>
+            <h2>
+                Heading22
+            </h2>
+        </div>
+        <div>
+            <h3>Heading33</h3>
+        </div>
 </body>
 </html>
