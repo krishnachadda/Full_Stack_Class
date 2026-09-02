@@ -5,15 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            height: 200px;
-            width: 200px;
+
+        .box1{
+            display: flex;
+            flex-direction: row;
+            outline: 3px solid black;
+            justify-content: center;
+            /* align-items: center; */
+            margin-bottom: 15px;
+            padding: 5px;
         }
+        .box1 > div{
+            color: white;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: 3px solid aqua;
+        }
+        .box2{
+            background-color: black;
+            flex-basis: 150px;
+        }
+        .box3{
+            background-color: green;
+            flex-basis: 150px;
+        }
+        .box4{
+            background-color: blue;
+            flex-basis: 200px;
+        }
+        .box11 > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        }
+        .box11{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            outline: 3px solid black;
+        }
+        .box12{
+            background-color: red;
+            flex-basis: 200px;
+            flex-grow: 1;
+        }
+        .box13{
+            background-color: green;
+            flex-basis: 150px;
+            flex-grow: 2;
+        }
+        .box14{
+            background-color: blue;
+            flex-basis: 150px;
+            flex-grow: 2;
+        }
+        .box21{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: 2px solid black;
+        }
+        .box22{
+            background-color: red;
+            flex: 1 0 150px;
+        }
+        .box23{
+            background-color: green;
+            flex: 1 0 150px;
+        }
+        .box24{
+            background-color: blue;
+            flex: 1 0 150px;
+        }
+        
     </style>
 </head>
 <body>
-        <div style="color: blue;"></div>
-        <div style="color: green;"></div>
-        <div style="color: red;"></div>
+    <div class="box1">
+        <div class="box2">1</div>
+        <div class="box3">2</div>
+        <div class="box4">3</div>
+    </div>
+     <div class="box11">
+        <div class="box12">1</div>
+        <div class="box13">2</div>
+        <div class="box14">3</div>
+    </div>
+    <div class="box21">
+        <div class="box22">1</div>
+        <div class="box23">2</div>
+        <div class="box24">3</div>
+    </div>
 </body>
 </html>
