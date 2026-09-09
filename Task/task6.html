@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 750px;
+            width: 900px;
+            outline: 2px solid black;
+        }
+        .box2{
+            display: grid;
+            grid-template-columns: repeat(4 , minmax(200px , 1fr));
+            grid-template-rows: repeat(3,minmax(200px,1fr));
+            padding: 50px 20px;
+            gap: 10px;
+        }
+        .box2 > div {
+            outline: 2px solid black;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div id="b1">1</div>
+            <div id="b2">2</div>
+            <div id="b3">3</div>
+            <div id="b4">4</div>
+            <div id="b11">5</div>
+            <div id="b12">6</div>
+            <div id="b13">7</div>
+            <div id="b14">8</div>
+            <div id="b21">9</div>
+            <div id="b22">10</div>
+            <div id="b23">11</div>
+            <div id="b24">12</div>
+        </div>
+    </div>
+</body>
+</html>

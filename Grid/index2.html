@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 200px 100px; 
+            grid-template-rows: 80px 300px 80px;
+            grid-template-areas:
+                "box1 box2 box2"
+                "box1 box3 box4"
+                "box5 box3 box6";
+        }
+        .grid>div{
+            /* height: 200px;
+            width: 200px; */
+            border: 2px solid black;
+        }
+        .grid>div:nth-child(1){
+            background-color: lightskyblue;
+        }
+        .grid>div:nth-child(2){
+            background-color: lightgrey;
+        }
+        .grid>div:nth-child(3){
+            background-color: lightcyan;
+        }
+        .grid>div:nth-child(4){
+            background-color:aqua ;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div style="grid-area: box1;"></div>
+        <div style="grid-area: box2;"></div>
+        <div style="grid-area: box3;"></div>
+        <div style="grid-area: box4;"></div>
+        <div style="grid-area: box5;"></div>
+        <div style="grid-area: box6;"></div>
+    </div>
+</body>
+</html>
