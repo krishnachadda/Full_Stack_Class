@@ -4,10 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-blue-500">
-    Hello world!
-  </h1>
+<body class="bg-[#F8FAFC] text-[#0F172A] font-['Inter']">
+
+  <nav class="max-w-[1200px] h-[72px] mx-auto px-6 flex items-center justify-between">
+    <h2 class="text-xl font-bold">SaaSify</h2>
+
+    <div class="hidden sm:flex gap-6 text-sm font-medium">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <button class="sm:hidden text-xl">☰</button>
+  </nav>
+
+  <section class="max-w-[1200px] min-h-[520px] mx-auto px-6 flex items-center">
+    <div class="max-w-[650px] text-center sm:text-left">
+      <h1 class="text-[36px] sm:text-[48px] font-bold leading-[1.1]">
+        Build better products, faster
+      </h1>
+
+      <p class="mt-5 text-[18px] leading-[1.6] text-[#475569]">
+        Everything you need to build, manage and grow your business in one place.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <button class="px-6 py-3 rounded-lg bg-[#4F46E5] text-white font-medium hover:bg-[#4338CA]">
+          Get Started
+        </button>
+
+        <button class="px-6 py-3 rounded-lg bg-white border border-[#E2E8F0] font-medium">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-[1200px] mx-auto px-6 pb-16">
+    <h2 class="text-[32px] font-bold mb-12">Features</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="bg-white border border-[#E2E8F0] rounded-lg p-6">
+        <h3 class="text-xl font-semibold">Easy to Use</h3>
+        <p class="mt-3 text-[#475569]">
+          Simple tools that are easy for everyone to use.
+        </p>
+      </div>
+
+      <div class="bg-white border border-[#E2E8F0] rounded-lg p-6">
+        <h3 class="text-xl font-semibold">Analytics</h3>
+        <p class="mt-3 text-[#475569]">
+          Check your business data and understand your results.
+        </p>
+      </div>
+
+      <div class="bg-white border border-[#E2E8F0] rounded-lg p-6">
+        <h3 class="text-xl font-semibold">Secure</h3>
+        <p class="mt-3 text-[#475569]">
+          Your information stays protected with secure systems.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 </html>
