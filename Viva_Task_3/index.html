@@ -1,11 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>AdminPro Dashboard</title>
+
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+
+    <div class="main-container">
+
+
+        <aside class="sidebar">
+
     
+            <div class="brand">
+                <span class="brand-icon">B</span>
+                <span>AdminPro</span>
+            </div>
+
+    
+            <nav class="side-menu" aria-label="Main navigation">
+
+                <a class="active" href="#dashboard">
+                    <span>⌂</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#analytics">
+                    <span>⌁</span>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="#users">
+                    <span>♙</span>
+                    <span>Users</span>
+                </a>
+
+                <a href="#orders">
+                    <span>▣</span>
+                    <span>Orders</span>
+                </a>
+
+                <a href="#products">
+                    <span>□</span>
+                    <span>Products</span>
+                </a>
+
+                <a href="#settings">
+                    <span>⚙</span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+    
+            <div class="profile">
+
+                <div class="profile-image">
+                    KC
+                </div>
+
+                <div class="profile-info">
+                    <strong>Krishna Chadda</strong>
+                    <small>Admin</small>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <main class="dashboard" id="dashboard">
+
+    
+            <header class="top-bar">
+
+        
+                <div class="mobile-brand">
+                    <span class="brand-icon">B</span>
+                    <span>AdminPro</span>
+                </div>
+
+        
+                <div class="search-box">
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search..."
+                        aria-label="Search"
+                    >
+                </div>
+
+        
+                <div class="top-actions">
+
+                    <button type="button" aria-label="Notifications">
+                        ♧
+                    </button>
+
+                    <span class="user-avatar">
+                        KC
+                    </span>
+
+                </div>
+
+            </header>
+
+
+    
+            <section class="dashboard-heading">
+
+                <div>
+                    <h1>Dashboard</h1>
+
+                    <p>
+                        Here is what is happening with your business today.
+                    </p>
+                </div>
+
+                <button class="date-button" type="button">
+                    This month ▾
+                </button>
+
+            </section>
+
+
+    
+            <section class="stats-grid" aria-label="Business statistics">
+
+        
+                <article class="stat-card revenue">
+
+                    <div class="stat-icon">
+                        ◷
+                    </div>
+
+                    <span>Total Revenue</span>
+
+                    <strong>₹1,24,532</strong>
+
+                    <small>
+                        ↑ 12%
+                        <em>from last month</em>
+                    </small>
+
+                </article>
+
+
+        
+                <article class="stat-card orders">
+
+                    <div class="stat-icon">
+                        ▣
+                    </div>
+
+                    <span>Total Orders</span>
+
+                    <strong>892</strong>
+
+                    <small>
+                        ↑ 6%
+                        <em>from last month</em>
+                    </small>
+
+                </article>
+
+
+        
+                <article class="stat-card users">
+
+                    <div class="stat-icon">
+                        ♙
+                    </div>
+
+                    <span>Active Users</span>
+
+                    <strong>3,521</strong>
+
+                    <small>
+                        ↑ 14%
+                        <em>from last month</em>
+                    </small>
+
+                </article>
+
+
+        
+                <article class="stat-card conversion">
+
+                    <div class="stat-icon">
+                        ▣
+                    </div>
+
+                    <span>Conversion Rate</span>
+
+                    <strong>4.2%</strong>
+
+                    <small>
+                        ↑ 2%
+                        <em>from last month</em>
+                    </small>
+
+                </article>
+
+            </section>
+
+
+    
+            <section class="content-grid">
+
+
+        
+                <article class="panel revenue-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h2>Revenue Overview</h2>
+                            <small>Monthly revenue performance</small>
+                        </div>
+
+                        <strong>₹1,24,532</strong>
+
+                    </div>
+
+
+            
+                    <div class="chart-area">
+
+                
+                        <div class="y-labels">
+                            <span>1.5L</span>
+                            <span>1L</span>
+                            <span>50k</span>
+                            <span>0</span>
+                        </div>
+
+
+                
+                        <div class="line-chart">
+
+                            <div class="chart-line"></div>
+
+                            <div class="chart-fill"></div>
+
+                            <div class="chart-points">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+
+                    
+                            <div class="x-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Aug</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+        
+                <article class="panel customers-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h2>Recent Customers</h2>
+                            <small>Latest customer activity</small>
+                        </div>
+
+                        <a href="#customers">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Kishan</td>
+                                <td>₹2,499</td>
+                                <td>
+                                    <b class="delivered">Delivered</b>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Lokesh Sharma</td>
+                                <td>₹4,099</td>
+                                <td>
+                                    <b class="processing">Processing</b>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Narendar</td>
+                                <td>₹1,299</td>
+                                <td>
+                                    <b class="shipped">Shipped</b>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Shashank</td>
+                                <td>₹2,799</td>
+                                <td>
+                                    <b class="delivered">Delivered</b>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Krishna </td>
+                                <td>₹1,499</td>
+                                <td>
+                                    <b class="cancelled">Cancelled</b>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </article>
+
+
+        
+                <article class="panel traffic-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h2>Traffic Overview</h2>
+                            <small>Weekly visitors</small>
+                        </div>
+
+                        <strong class="positive">
+                            ↑ 18%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="traffic-total">
+                        8,432
+                        <small>Total Visitors</small>
+                    </div>
+
+
+            
+                    <div class="bar-chart">
+
+                        <i style="height: 26%;"></i>
+                        <i style="height: 38%;"></i>
+                        <i style="height: 42%;"></i>
+                        <i style="height: 35%;"></i>
+                        <i style="height: 50%;"></i>
+                        <i style="height: 68%;"></i>
+                        <i style="height: 57%;"></i>
+                        <i style="height: 88%;"></i>
+
+                    </div>
+
+
+                    <div class="week-labels">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+
+                </article>
+
+
+        
+                <article class="panel products-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h2>Top Products</h2>
+                            <small>Best performing products</small>
+                        </div>
+
+                        <a href="#products">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Sales</th>
+                                <th>Change</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Laptop Pro</td>
+                                <td>2,450</td>
+                                <td class="positive">+12%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Wireless Earbuds</td>
+                                <td>1,890</td>
+                                <td class="positive">+8%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Smart Watch</td>
+                                <td>1,203</td>
+                                <td class="positive">+6%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Backpack</td>
+                                <td>982</td>
+                                <td class="positive">+4%</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </article>
+
+            </section>
+
+
+    
+            <footer class="dashboard-footer">
+
+                <span>
+                    <b>Colour Palette</b>
+                    #0F172A&nbsp;&nbsp;
+                    #4F46E5&nbsp;&nbsp;
+                    #16A34A&nbsp;&nbsp;
+                    #DC2626&nbsp;&nbsp;
+                    #D97706
+                </span>
+
+                <span>
+                    <b>Typography</b>
+                    Dashboard title / 24px / 700
+                    &nbsp;
+                    KPI number / 28px / 700
+                </span>
+
+                <span>
+                    <b>Key Layouts</b>
+                    Sidebar: 240px (sticky)
+                    &nbsp;
+                    Card padding: 20px
+                </span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
 </body>
 </html>
