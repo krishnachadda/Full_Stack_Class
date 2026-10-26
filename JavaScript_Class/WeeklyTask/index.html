@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            height: 97vh;
+        }
+        .main-container{
+            margin: auto;
+            height:90%;
+            width:90%;
+            padding: 40px;
+            background-color: rgb(240, 248, 248);
+        }
+        .questions-area{
+            height: 100%;
+            width: 100%;
+            outline: 2px solid lightgray;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .question{
+            height: 40%;
+            width: 100%;
+            outline: 2px solid lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .options{
+            height: 60%;
+            width: 100%;
+            outline: 2px solid lightgray;
+        }
+        .question>p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        .options>input{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="questions-area">
+            <div class="question">
+                <p class="q"></p>
+            </div>
+            <div class="options">
+                <label>
+                    <input type="radio" name="sky-color" value="Blue">
+                    <p class="option-1"></p>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="sky-color" value="Green">
+                    <p class="option-2"></p>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="sky-color" value="Red">
+                    <p class="option-3"></p>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="sky-color" value="yellow">
+                    <p class="option-4">
+                    </p>
+                </label>
+                <br>
+                <button type="button" id="submit-answer">Submit</button>
+                <p id="selected-value"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
