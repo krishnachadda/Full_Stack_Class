@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reaction Timer</title>
+    <style>
+        #screen {
+            background: lightgray;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .green {
+            background: green !important;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Reaction Timer</h2>
+    <button onclick="startGame()">Start</button>
+
+    <div id="screen" onclick="checkTime()">Wait...</div>
+    <p id="result"></p>
+    <script src="task8.js"></script>
+
+</body>
+</html>
