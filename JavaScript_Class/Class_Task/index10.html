@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Match</title>
+    <style>
+        
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 30px;
+    }
+
+    #game {
+        display: grid;
+        grid-template-columns: repeat(4, 90px);
+        gap: 10px;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .card {
+        width: 90px;
+        height: 90px;
+        font-size: 32px;
+        background-color: steelblue;
+        color: white;
+        border: 2px solid navy;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .card.flipped {
+        background-color: lightgray;
+        color: black;
+    }
+
+    .card.matched {
+        background-color: lightgreen;
+        color: black;
+        cursor: default;
+    }
+
+    button:disabled {
+        cursor: not-allowed;
+    }
+
+    #restartBtn {
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 420px) {
+        #game {
+            grid-template-columns: repeat(4, 65px);
+            gap: 7px;
+        }
+
+        .card {
+            width: 65px;
+            height: 65px;
+            font-size: 25px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Memory Card Match</h1>
+    <p>Find all 8 matching pairs!</p>
+
+    <h3>Matches: <span id="matches">0</span> / 8</h3>
+
+    <div id="game"></div>
+
+    <p id="message">Click a card to begin.</p>
+
+    <button id="restartBtn">Restart Game</button>
+
+    <script src="task10.js"></script>
+</body>
+</html>
