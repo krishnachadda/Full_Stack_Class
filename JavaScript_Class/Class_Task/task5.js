@@ -23,6 +23,3 @@ function game() {
 
     para.textContent += " Computer chose: " + compOpt;
 }
-
-// whack a Mole 3x3 matrix
-// 
