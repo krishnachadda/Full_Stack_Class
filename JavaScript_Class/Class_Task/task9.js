@@ -15,7 +15,8 @@
 
 // }
 
-// // manage();
+
+// manage();
 
 // let counter = manage();
 
@@ -36,3 +37,28 @@
 // console.log(a(2)(3)(4));
 
 
+function memoize(fr){
+    const cache = {};
+    return function(x , y){
+        const key = `${x}`;
+        if(key in cache){
+            console.log('Fetching from cache');
+            return cache[key];
+        }
+        const result = fr(x);
+        cache[key] = result;
+        return result;
+    }
+}
+const factorial = memoize(function(x){
+    let ans = 1;
+    for(let i = x ; i > 0 ; i--){
+        ans = ans * i;
+    }
+    return ans;
+});
+
+console.log(factorial(5));
+console.log(factorial(6));
+console.log(factorial(5));
+console.log(factorial(6));
